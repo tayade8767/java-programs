@@ -1,0 +1,7 @@
+class Akash
+{
+    final public static void main(String args[])                  //final before the public   //(String args[]) OR(String[] args)
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
