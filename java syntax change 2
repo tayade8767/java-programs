@@ -1,0 +1,7 @@
+class Akash
+{
+    public static void main(String[] args)                  //  [] define after the string
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
