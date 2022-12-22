@@ -1,0 +1,7 @@
+class Akash
+{
+    public static void main(String  []args)            //java array use the array before the variable
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
