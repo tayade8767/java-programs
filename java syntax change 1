@@ -1,0 +1,7 @@
+class Akash
+{
+    public static void main(String args[])
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+};                                       //  does not need to give the semicolon    
