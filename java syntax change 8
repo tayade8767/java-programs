@@ -1,0 +1,7 @@
+class Akash
+{
+    final strictfp public static void main(String args[])            //final strictfp before the public   //  (String args[]) OR (String[] args) 
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
