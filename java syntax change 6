@@ -1,0 +1,7 @@
+class Akash
+{
+    public static final void main(String[] args)            give the final in between them    // (String[] args)  OR (String args[])
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
