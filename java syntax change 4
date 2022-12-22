@@ -1,0 +1,7 @@
+class Akash
+{
+    public static void main(String... args)        //we can give the ellispe dot instaid of the   []
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
