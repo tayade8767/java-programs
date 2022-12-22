@@ -1,0 +1,7 @@
+class Akash
+{
+    static public void main(String args[])                // static and public interchange //we can give []  after the string[] or the after the args[]
+    {
+        System.out.println("akaksjsjsjsjsjj");
+    }
+}
