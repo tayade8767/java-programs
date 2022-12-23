@@ -1,0 +1,9 @@
+public class ClassLoaderexample
+{
+    public static void main(String args[])
+    {
+        Class c=ClassLoaderexample.class;                                 //  it use to print classloader file name
+        System.out.println(c.getClassLoader());
+        System.out.println(String.class.getClassLoader());
+    }
+}
