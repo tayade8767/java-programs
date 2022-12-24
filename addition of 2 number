@@ -1,0 +1,11 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int a=10;
+        int b=30;                                                      //it is the instance variable of the class
+        int c=a+b;
+        System.out.println("Addition of two no.=");
+         System.out.println(c);
+    }
+}
