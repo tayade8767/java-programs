@@ -1,0 +1,10 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        float a=12.34f;                           //instance of the variable
+        int b=(int) a;                                //float to the int
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
