@@ -1,0 +1,10 @@
+public class Simple 
+{
+    public static void main(String args[])
+    {
+       int a=129;
+       byte b=(byte) a;                                            // the rang of the byte is(-128 to 127)  so value is in the form of the CIRCLE to that RANGE 
+       System.out.println(a);                                        //  when we cross the RANGE it can work as CIRCLE
+       System.out.println(b);
+    }
+}
