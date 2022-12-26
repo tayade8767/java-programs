@@ -1,0 +1,14 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int a=10;
+        int b=-11;
+        boolean c=true;
+        boolean d=false;
+        System.out.println(~a);         // ~a(~10)  means total total value of 10 on negative to positive scale
+        System.out.println(~b);
+        System.out.println(!c);
+        System.out.print(!d);
+    }
+}
