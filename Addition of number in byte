@@ -1,0 +1,12 @@
+public class Simple 
+{
+    public static void main(String args[])
+    {
+       byte a=10;
+       byte b=20;                                                   // byte having the size of 1 byte
+       byte c=(byte) (a+b);                                                                              //      1 byte= 8 bit
+       System.out.println("a="+a);                         
+       System.out.println("b="+b);
+       System.out.println("addition in byte="+c);  
+    }
+}
