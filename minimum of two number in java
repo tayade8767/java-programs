@@ -1,0 +1,9 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int a=20,b=4,min;
+        min=(a<b)?a:b;
+        System.out.println("minimum of two number="+min);
+    }
+};
