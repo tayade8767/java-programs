@@ -1,0 +1,15 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        short a=10,b=20;
+        
+        // a=a+b;     // it is comlile time error in the because the it is the nouw it is in the INT form not in SHORT form
+        
+         //but the a+=b can run
+        // System.out.println(a);
+        
+         a=(short) (a+b);                              it type cast in higher to lower data type
+        System.out.println(a);
+    }
+};
