@@ -1,0 +1,19 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+    
+        //it is the left shift means the multiplaction (*)
+        System.out.println(10<<3);  //10*2^3
+        
+        //it is the right shift means the division  (/)
+        System.out.println(120>>4);  //10/2^4
+        
+        //it is the right shift >>> and >> works as same
+        System.out.println(120>>>4);
+        
+        //it is the change the parity  bit when it is negative number
+        System.out.print(-20>>>2);
+        
+    }
+}
