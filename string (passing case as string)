@@ -1,0 +1,31 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int level;
+        String levelstring="Expert";
+        switch(levelstring)
+        {
+            case "intermidiate":
+                {
+                level=1;
+                break;
+                }
+                case "medium":
+                {
+                level=2;
+                break;
+                }
+                case "Expert":
+                {
+                level=3;
+                break;
+                }
+                default:
+                {
+                    level=100000;
+                }
+        }
+        System.out.println("your level is "+level);
+    }
+}
