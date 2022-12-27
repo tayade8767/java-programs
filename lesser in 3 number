@@ -1,0 +1,19 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+       int a=20,b=40,c=2;
+       if(a<b&&a<c)
+       {
+           System.out.println(a +"is lesser");
+       }
+       else if(b<c)
+       {
+           System.out.println(b +"islesser");
+       }
+       else
+       {
+           System.out.println(c + "is lesser");
+       }
+    }
+}
