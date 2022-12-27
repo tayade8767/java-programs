@@ -1,0 +1,12 @@
+public class Akash //implements Cloneable
+{
+    public static void main(String args[])
+    {
+        String[] name1={"c","java","c++","pythan","c#"};
+        System.out.println("program starts with main");
+        for(String p:name1)                                                    // string p====starting location  and :name1 is ending location
+        {
+            System.out.println(p);
+        }
+    }
+}
