@@ -1,0 +1,27 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+       String address="delhi,india" ;
+       if(address.endsWith("india"))                              //WE CAN USE THE VARIABLE NAME AS OJECT
+       {
+           System.out.println("you are live in india");
+         if(address.contains("noada"))
+         {
+            System.out.println("you are from noida");
+         }
+         else if (address.contains("Meerut"))
+         {
+             System.out.println("you are from meerut");
+         }
+         else {
+             System.out.println(address.split(",")[0`   ]);
+         }
+       }
+       else 
+       {
+           System.out.println("you are not living in india");
+           
+       }
+    }
+}
