@@ -1,0 +1,23 @@
+public class Akash implements Cloneable                          //( implements Cloneablen )it is use to create the clone or the copy of the object
+{
+    public static void main(String args[])
+    {
+        int n=2;
+        switch(n)
+        {
+            case 0:
+                {
+                    System.out.println("it is 0");
+                }
+            case 1:
+                {
+                    System.out.println("it is 1");
+                }
+            default:
+            {
+                    System.out.println("it is default");
+            }
+        }
+        System.out.println("program ends ");
+    }
+}
