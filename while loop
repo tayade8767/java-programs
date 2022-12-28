@@ -1,0 +1,22 @@
+public class Akash 
+{
+    public static void main(String args[])
+    { 
+       int i=1,j=1;
+       aa:
+        while(i<=3)
+         {
+             bb:
+             while(j<=3)
+             {
+                 if(i==2&&j==2)
+                 {
+                     break bb;
+                 }
+                 System.out.println(i+" "+j);
+                 j++;
+             }
+             i++;
+         }
+    } 
+}
