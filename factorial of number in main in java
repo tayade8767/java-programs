@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Akash
+{
+  
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number::");
+        int num=s.nextInt();
+       int i,sum=1,k;
+       for(i=1;i<=num;i++)
+        {
+            sum=sum*i;
+        }
+        System.out.println(sum+" is factorial of "+num);
+    }
+}
