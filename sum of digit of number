@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=0,r,n,temp;
+        System.out.print("enter the number::");
+        n=s.nextInt();
+        temp=n;
+
+        while(n>0)
+        {
+            r=n%10;
+            num=num+r;
+            n=n/10;
+        }
+
+        System.out.println(num+" is addition of digit of number::"+temp);
+
+    }
+}
