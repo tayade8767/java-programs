@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Akash
+{
+    static int i,sum=1,k;
+    static int fact(int n)
+    {
+        for(i=1;i<=n;i++)
+        {
+            sum=sum*i;
+        }
+        return sum;
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number::");
+        int num=s.nextInt();
+        k=fact(num);
+        System.out.println(k+" is factorial of "+num);
+    }
+}
