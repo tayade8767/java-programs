@@ -1,0 +1,13 @@
+import java.util.Scanner;                               // it is the java.util package   of scanner class
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number 1::");
+        int a=s.nextInt();
+        System.out.print("enter the number 2::");
+        int b=s.nextInt();
+        System.out.println("addition of two number="+(a+b));
+    }
+}
