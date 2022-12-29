@@ -1,0 +1,32 @@
+import java.util.Scanner; //instai of scanner we can use *
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n,m,i,count=0;
+        System.out.print("enter the number::");
+        n=s.nextInt();
+        m=n/2;
+        if(n==0||n==1)
+        {
+            System.out.println(n+" not prime number");
+        }
+        else
+        {
+            for(i=2;i<=m;i++)
+            {
+                if(n%2==0)
+                {
+                     System.out.println(n+" not prime number");
+                     count++;
+                     break;
+                }
+            }
+            if(count==0)
+            {
+                System.out.println(n+" prime number");
+            }
+        }
+    }
+}
