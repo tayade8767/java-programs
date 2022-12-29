@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=0,r,n,temp;
+        System.out.print("enter the number::");
+        n=s.nextInt();
+        while(n>0)
+        {
+            r=n%10;
+            num=(num*10)+r;
+            n=n/10;
+        }
+        System.out.println("reverse of the number::"+num);
+    }
+}
