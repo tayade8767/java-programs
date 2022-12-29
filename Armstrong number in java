@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=0,r,n,temp;
+        System.out.print("enter the number::");
+        n=s.nextInt();
+        temp=n;
+
+        while(n>0)
+        {
+            r=n%10;
+            num=num+r*r*r;
+            n=n/10;
+        }
+
+        System.out.println("addition of digit of number::"+num);
+
+        if(temp==num)
+        {
+            System.out.println(num+" is Armstrong of "+temp);
+        }
+        else
+        {
+            System.out.println(num+" is not Armstrong of "+temp);
+        }
+    }
+}
