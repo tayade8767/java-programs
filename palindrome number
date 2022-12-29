@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int num=0,r,n,temp;
+        System.out.print("enter the number::");
+        n=s.nextInt();
+        temp=n;
+        
+        while(n>0)
+        {
+            r=n%10;
+            num=(num*10)+r;
+            n=n/10;
+        }
+        
+        System.out.println("reverse of the number::"+num);
+        
+        if(temp==num)
+        {
+            System.out.println(num+" is palandrome of "+temp);
+        }
+        else
+        {
+            System.out.println(num+" is not palandrome of "+temp);
+        }
+    }
+}
