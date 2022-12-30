@@ -1,0 +1,12 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        char a='a';
+        char b='b';
+        int c=a;
+        int d=b;
+        System.out.println("ASCII value of the "+a+" is "+c);
+        System.out.println("ASCII value of the "+b+" is "+d);
+    }
+}
