@@ -1,0 +1,16 @@
+public class Akash
+{
+
+    void pk()
+    {
+        System.out.println("HI i am akash  tayade \n 
+        form small town and learning in the \n 
+        shri guru gobind sing college of engeneering in nanded");
+    }
+    
+public static void main(String args[])
+    {
+        Akash s=new Akash();                  //   create the object in java
+        s.pk();                               //   calling the method in java
+    }
+}
