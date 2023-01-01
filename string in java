@@ -1,0 +1,14 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        String firstname="akash";
+        String lastname="tayade";
+        String ak="Hi I am Akash TaYade";
+        System.out.println("length of the ("+ak+") ="+ak.length());    //length of tstring
+        System.out.println("to the upper case "+ak.toUpperCase());      // convert in uppercase
+        System.out.println("to the lower case "+ak.toLowerCase());    // convert in lower case
+        System.out.println("index of Akash "+ak.indexOf("Akash"));     //  to find the index
+System.out.println("concatination of string ="+firstname.concat(lastname));    //   concatinate the string  
+    }
+}
