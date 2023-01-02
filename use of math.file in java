@@ -1,0 +1,15 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int a=13,b=20;
+        double c=-1.2;
+        int randomnum=(int)(Math.random()*101);                            // it will gives the randomnum from 0 to 100
+        System.out.println("maximum number from 20,13 are "+Math.max(a,b));       //  Math.max(a,b)  gives the maximum number from 2 numebr
+        System.out.println("minimum number from 20,13 are "+Math.min(a,b));       //  Math.min(a,b)  gives the minimum number from 2 numebr
+        System.out.println("squre root of 20 are "+Math.sqrt(a));                 //   Math.sqrt(a)  gives the squre root of the number
+        System.out.println("Absulute value of -1.2 are "+Math.abs(c));            //   Math.abs(c)   gives the Absulute number of the number 
+        System.out.println("Random number are "+Math.random());                   //   Math.random() gives the random number between 0.0 to 1.0
+        System.out.println("random number from 0 to 100 are "+randomnum);         //   randomnum     gives the random number between 0 to 100
+    }
+}
