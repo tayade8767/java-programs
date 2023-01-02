@@ -1,0 +1,8 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        int a=13,b=20;
+        System.out.println((a<b));                       //  it will the  true if it is true otherwise false
+    }
+}
