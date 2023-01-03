@@ -1,0 +1,20 @@
+public class Akash
+{
+  int ak(int n)
+    {
+        if(n>0)
+        {
+            return n+ak(n-1);
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    public static void main(String args[])
+    {
+        Akash s=new Akash();
+        
+            System.out.print(s.ak(10));
+    }
+}
