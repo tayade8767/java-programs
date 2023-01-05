@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Akash
+{
+    static void min(int a[])
+    {
+      int minimum=a[0]; 
+        for(int i=0;i<a.length;i++)
+        {
+            if(minimum>a[i])
+            {
+                minimum=a[i];
+            }
+        }
+            System.out.println("minimum of the array="+minimum);
+    }
+    void max(int a[])
+    {
+        int maximum=a[0];
+         for(int i=0;i<a.length;i++)
+         {
+             if(maximum<a[i])
+             {
+                 maximum=a[i];
+             }
+         }
+      System.out.println("The maximum of the array="+maximum);
+    }
+    
+    
+    public static void main(String args[])
+    {
+      Akash x=new Akash();                                //  creating the object of the class
+      Scanner s=new Scanner(System.in);
+      System.out.print("enter the array size::");
+        int n=s.nextInt();
+       int a[]=new int[n];                                // dynamically assign the array size
+      for(int i=0;i<a.length;i++)
+        {
+            System.out.print("enter the a["+i+"]::");
+            a[i]=s.nextInt();                                 //  taking the array from user
+        }
+        min(a);
+        x.max(a);
+    }
+}
