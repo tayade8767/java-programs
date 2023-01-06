@@ -1,0 +1,19 @@
+class Jay
+{
+    void pk(int a,String b)
+    {
+    int roll=a;
+    String name=b;
+        System.out.println(roll+" "+name);
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Jay s1=new Jay();
+        Jay s2=new Jay();
+        s1.pk(64,"akash");
+        s2.pk(61,"pushpa");
+    }
+}
