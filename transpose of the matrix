@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+    
+       Scanner s=new Scanner(System.in);
+       
+       System.out.print("enter the number of rows::");
+       int m=s.nextInt();
+       System.out.print("enter the number of columns::");
+       int n=s.nextInt();
+       
+       int a[][]=new int[m][n];                 ///create the dynamically array
+       
+       for(int i=0;i<m;i++)
+       {
+           for(int j=0;j<n;j++)
+           {
+               System.out.print("enter a["+i+"]["+j+"]::");          //taking the array
+               a[i][j]=s.nextInt();
+           }
+       }
+       
+       
+       System.out.println("the matrix is given below");
+       for(int i=0;i<m;i++)
+       {
+           for(int j=0;j<n;j++)
+           {
+               System.out.print(a[i][j]+"  ");                         // printing the array
+           }
+          System.out.println();
+       }
+       
+       
+       System.out.println("transpose of the matrix is given below");
+       for(int i=0;i<m;i++)
+       {
+           for(int j=0;j<n;j++)
+           {
+               System.out.print(a[j][i]+"  ");                                            //transpose of the matrix
+           }
+          System.out.println();
+       }
+    }
+}
