@@ -1,0 +1,26 @@
+class Jay
+{
+    int roll;
+    int name;
+    void rect(int a,int b)
+    {
+        roll=a;
+        name=b;
+    }
+    void display()
+    {
+        System.out.println("the area of the rectangle="+(roll*name));
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Jay s1=new Jay();
+        Jay s2=new Jay();
+        s1.rect(64,2);
+        s2.rect(61,43);
+        s1.display();
+        s2.display();
+    }
+}
