@@ -1,0 +1,28 @@
+
+
+class jay                                     // creating an seprate class of name jay
+{
+    int c;
+    String d;                                                           //  instance variable means which is define inside the class but outside the method 
+}
+
+
+
+public class Akash
+{
+     int a;                            //  instance variable means which is define inside the class but outside the method 
+     String b;                                                  //   creating an instance variable
+    public static void main(String args[])
+    {
+    
+    
+        Akash s=new Akash();                                           //  craeting an object of the class and allocating the memory
+        jay t=new jay();                                                    //  craeting an object of the class and allocating the memory              
+        
+        
+        System.out.println("the value of the instance variable in integer::"+s.a);
+        System.out.println("the value of the instance variable in string::"+s.b);       //  printing the value of the variable
+        System.out.println("the value of the instance variable in string::"+t.c);
+        System.out.println("the value of the instance variable in string::"+t.d);
+    }
+}
