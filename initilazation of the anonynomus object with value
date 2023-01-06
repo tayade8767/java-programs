@@ -1,0 +1,18 @@
+class Jay
+{
+    int roll;
+    int name;
+    void rect(int a,int b)
+    {
+        roll=a;
+        name=b;
+        System.out.println("the area of the rectangle="+(roll*name));
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+       new Jay().rect(64,2);                                                ////  creating an anonymus object
+    }
+}
