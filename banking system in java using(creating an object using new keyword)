@@ -1,0 +1,116 @@
+import java.util.Scanner;                                     //  it Scanner package for the taking input 
+
+class Bank
+{
+    
+    Scanner z=new Scanner(System.in);                            // it is use for the taking input from user
+    
+    static int balance=20000;
+    int amount;
+    
+    void acc_detail(String a,int password)                                          //  it is for the conforming the user
+    {
+        System.out.print("enter the password for checking::");
+        int pass=z.nextInt();
+        if(password==pass)
+        {
+            System.out.println(a+" you are succesfully LOG-IN to your bank account");
+        }
+        else
+        {
+            System.out.println(a+" you are not succesfully LOG-IN to your bank account");
+        }
+    }
+    
+    void acc_withdraw()                                                            // it is use for withdraw of the money in bank account
+    {
+            System.out.println("enter the amount for withdraw");
+            amount=z.nextInt();
+        if(balance<=2000)
+        {
+          if(balance<=amount)
+          {
+            System.out.println("your account has "+balance+"please enter valid amount");
+          }
+          else
+          {
+             System.out.println("your account balance is "+balance+" which is less than 2000 so your account is block with in 3 month");
+          }
+        }
+        else
+        {
+            balance=balance-amount;
+            System.out.print(amount+" is withdraw and your account balance is "+balance);
+        }
+    }
+    
+    void acc_deposite(String name)                                            //it is use for the deposite the money in bank account
+    {
+        System.out.println("enter the amount for deposite");
+            amount=z.nextInt();
+        if(amount>=100000)
+        {
+            System.out.println(name+" your account limit is 100000");
+            System.out.println("so dear "+name+" your account is minor please convert it into major");
+        }
+        else
+        {
+            balance=balance+amount;
+            System.out.print(amount+" is deposite and your account balance is "+balance);
+        }
+    }
+    
+    void acc_balance(String name)
+    {
+        System.out.println(name+" your account balance is "+balance);                //use for the showing the account balance
+    }
+    
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        
+        Scanner sc=new Scanner(System.in);                                      //taking an input in java
+        Bank s=new Bank();                                         // creating an object using new keyword 
+        
+        System.out.print("enter the user name::");
+        String name=sc.nextLine();
+        System.out.print("enter the password in integer::");
+        int password=sc.nextInt();
+        s.acc_detail(name,password);
+        
+        while(true)
+        {
+            System.out.println();
+            System.out.println("enter 1 for withdraw");
+            System.out.println("enter 2 for deposite");
+            System.out.println("enter 3 for show account balance");
+            int n=sc.nextInt();
+            
+            switch(n)                                                   // use of the switch for the calling the method OR the function
+            {
+                case 1:
+                    {
+                        s.acc_withdraw();
+                        break;
+                    }
+                case 2:
+                    {
+                        s.acc_deposite(name);
+                        break;
+                    }
+                case 3:
+                    {
+                        s.acc_balance(name);
+                        break;
+                    }
+                default:
+                {
+                    System.out.println("enter valid input");
+                }
+            }
+        }
+        
+    }
+}
