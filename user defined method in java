@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Akash 
+{
+    
+            public static int sum(int a,int b)                                    // not calling by the object only defining the method name
+            {
+                show();                                        ///when we define the   ( public int sum(int a,int b) ,int sum(int a,int b) ) calling by object 
+                return a+b;
+            }
+             static void show()
+            {
+                System.out.println("number of statements ");
+            }
+    
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        
+        System.out.print("enter the number 1::");
+        int a=s.nextInt();
+        System.out.print("enter the number 2::");
+        int b=s.nextInt();
+        
+        int c=sum(a,b);                                                               ///   calling the method in class
+        System.out.println("addition of two number::"+c);
+    }
+}
