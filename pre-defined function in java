@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Akash 
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number 1::");
+        int a=s.nextInt();
+        System.out.print("enter the number 2::");
+        int b=s.nextInt();
+        System.out.println("maximum of two number is="+Math.max(a,b));
+        System.out.println("minimum of two number is="+Math.min(a,b));
+        System.out.println("squre root of the number is ="+Math.sqrt(a));
+    }
+}
