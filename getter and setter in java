@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Akash
+{
+    private int a,b;                                      ///it is use to keep sensetive data sequred
+    
+    public void setsum(int c,int d)               /// it is use to set the value also known as (mutator)
+    {
+        this.a=c;
+        this.b=d;
+    }
+    public int getsum()                          /// it is use to get the value also known as (accseser)
+    {
+        return a+b;
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        Akash z=new Akash();
+        
+        System.out.print("enter the name::");
+        String name=s.nextLine();
+        System.out.print("enter the number 1::");
+        int a=s.nextInt();
+        System.out.print("enter the number 2::");
+        int b=s.nextInt();
+        
+         z.setsum(a,b);
+                                                                                       // calling the function
+         System.out.println("the addition of two number ="+z.getsum());
+    }
+}
