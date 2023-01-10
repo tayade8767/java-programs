@@ -1,0 +1,11 @@
+public class Akash
+{
+    Akash()                                                                       //  default OR no arg constrcter
+    {
+        System.out.println("my name is akash tayade");
+    }
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                                               //   calling to the constructer
+    }
+}
