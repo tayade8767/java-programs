@@ -1,0 +1,19 @@
+public class Akash
+{
+    String a;
+    int b;
+    Akash(String name,int n)                                          /////parametrized constructer
+    {
+        a=name;
+        b=n;
+    }
+    void display()
+    {
+        System.out.println(a+"  "+b);
+    }
+    public static void main(String args[])
+    {
+        Akash s=new Akash("akash",1212);                             //   calling the constructer
+        s.display();
+    }
+}
