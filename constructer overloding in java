@@ -1,0 +1,31 @@
+public class Akash
+{
+    String name;
+    int id;
+    int age;
+    
+    Akash(String a,int b)
+    {
+        name=a;
+        id=b;
+    }
+    
+    Akash(String a,int b,int c)
+    {
+        name=a;
+        id=b;
+        age=c;
+    }
+    
+    void display()
+    {
+        System.out.println(id+"  "+name+"  "+age);
+    }
+    public static void main(String args[])
+    {
+        Akash s1=new Akash("akash",1212);                              //   calling constructer
+        Akash s2=new Akash("tejas",12,2323);                              // calling overloding constructer
+        s1.display();
+        s2.display();
+    }
+}
