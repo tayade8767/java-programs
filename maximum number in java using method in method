@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Akash
+{
+    Scanner s=new Scanner(System.in);
+    int a,b,c;
+    void max()
+    {
+        System.out.print("enter the number 1::");
+         a=s.nextInt();
+        System.out.print("enter the number 2::");
+         b=s.nextInt();
+        System.out.print("enter the number 3::");
+         c=s.nextInt();
+        
+        display();
+    }
+    
+    void display()
+    {
+        if(a>b&&a>c)
+        {
+            System.out.print("the maximum number="+a);
+        }
+        else if(b>c)
+        {
+            System.out.print("the maximum number="+b);
+        }
+        else
+        {
+            System.out.print("the maximum number="+c);
+        }
+    }
+    public static void main(String args[])
+    {
+        Akash z=new Akash();
+        z.max();
+    }
+}
