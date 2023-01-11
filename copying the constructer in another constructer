@@ -1,0 +1,26 @@
+public class Akash
+{
+   String name;
+   int age;
+    Akash(String a,int b)
+    {
+        name=a;
+        age=b;
+    }
+    Akash(Akash z)
+    {
+        name=z.name;
+        age=z.age;
+    }
+  void display()
+    {
+        System.out.println(name+" "+age);
+    }
+    public static void main(String args[])
+    {
+       Akash a=new Akash("akash tayade",20);
+        Akash s=new Akash(a);
+        a.display();
+        s.display();
+    }
+}
