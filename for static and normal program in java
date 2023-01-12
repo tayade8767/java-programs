@@ -1,0 +1,18 @@
+public class Akash
+{
+    static int count=0;
+    int temp=0;
+    Akash()
+    {
+        count++;
+        temp++;
+        System.out.println("for static "+count+"  for temp "+temp);
+    }
+    public static void main(String args[])
+    {
+        Akash a1=new Akash();
+        Akash a2=new Akash();
+        Akash a3=new Akash();
+        Akash a4=new Akash();
+    }
+}
