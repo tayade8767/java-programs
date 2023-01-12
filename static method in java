@@ -1,0 +1,14 @@
+public class Akash
+{
+    static int cube(int x)
+    {
+        return x*x*x;
+    }
+    public static void main(String args[])
+    {
+    
+        int result=Akash.cube(5);                               //      calling to the differently
+        
+        System.out.println("the cube of 5 ="+result);
+    }
+}
