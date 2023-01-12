@@ -1,0 +1,89 @@
+import java.util.Scanner;
+public class Akash
+{
+    Scanner s=new Scanner(System.in);
+    int n,i,sum=0;
+    int mark[]=new int[5];
+    void input_marks()
+    {
+    // System.out.println("enter the number of subjects::");
+    // n=s.nextInt();
+    
+    System.out.println();
+        System.out.println("marks can be taken by computer directly");
+        System.out.println();
+        for(i=0;i<mark.length;i++)
+        {
+        int k=(int) (Math.random()*(100-0+1)+0);
+            mark[i]=k;
+        }
+        for(i=0;i<mark.length;i++)
+        {
+            System.out.println("marks of the subject "+i+"::"+mark[i]);
+        }
+     }
+     
+     void display_grades()
+     {
+         for(i=0;i<mark.length;i++)
+         {
+             if(mark[i]<=100&&mark[i]>=90)
+             {
+                 System.out.println(i+" subject grade=A+");
+             }else if(mark[i]<90 && mark[i]>=80)
+             {
+                 System.out.println(i+" subject grade=A");
+             }
+             else if(mark[i]<80 && mark[i]>=70)
+             {
+                 System.out.println(i+" subject grade=B+");
+             }
+             else if(mark[i]<70 && mark[i]>=60)
+             {
+                 System.out.println(i+" subject grade=B");
+             }
+             else if(mark[i]<60 && mark[i]>=50)
+             {
+                 System.out.println(i+" subject grade=C+");
+             }
+             else if(mark[i]<50 && mark[i]>=40)
+             {
+                 System.out.println(i+" subject grade=C");
+             }else if(mark[i]<40 && mark[i]>=35)
+             {
+                 System.out.println(i+" subject grade=D");
+             }
+             else 
+             {
+                 System.out.println(i+" subject fails with grade=F ");
+             }
+         }
+     }
+     
+     void per()
+     {
+         for(int i=0;i<mark.length;i++)
+         {
+             sum+=mark[i];
+         }
+         System.out.println("Total of the marks="+sum);
+         sum=(sum*100)/500;
+         System.out.println("persentage of the marks="+sum);
+         if(sum>=35)
+         {
+             System.out.println("pass pass the exam");
+         }
+         else
+         {
+             System.out.println("Fail the exam");
+         }
+     }
+     
+    public static void main(String args[])
+    {
+        Akash z=new Akash();
+        z.input_marks();
+        z.display_grades();
+        z.per();
+    }
+}
