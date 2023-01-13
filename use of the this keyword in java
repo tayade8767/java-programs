@@ -1,0 +1,23 @@
+class vikee
+{
+    int age;
+    String name;
+    vikee(int age,String name)
+    {
+        this.name=name;                                                                     //    it is use to assign the value to the instance value of class
+        this.age=age;
+    }
+    void xyz()
+    {
+    System.out.println("name of the student is "+name+" and age is "+age);
+    }
+}
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+        vikee v=new vikee(20,"akash");
+        v.xyz();
+    }
+}
