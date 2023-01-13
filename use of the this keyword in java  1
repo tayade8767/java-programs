@@ -1,0 +1,21 @@
+class vikee
+{
+    void abc()
+    {
+System.out.println("my name is akash tayade and i am not seating alone");
+    }
+    void xyz()
+    {
+    System.out.println("name of the student is ");
+    this.abc();                                                                          //   calling to the another method using this keyword
+    }
+}
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+        vikee v=new vikee();                                               //   creating the object of the class
+        v.xyz();                                         //  calling to the method of the class
+    }
+}
