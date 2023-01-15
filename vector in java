@@ -1,0 +1,29 @@
+import java.util.*;                                                               //importing the all package
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+    
+       // Vector <String> a=new <String> Vector();                                       //  creating the object for the string
+       
+        Vector a=new Vector();                                                     //  creating object for the all
+        
+        Vector <Integer> in=new <Integer> Vector();                         // creating the object for integer
+        
+        in.add(10);
+        in.add(20);
+        in.addElement(30);
+        System.out.println("elements in the array type vector="+in);
+        a.add("akash");
+        a.add("tejas");
+        a.add("vikee");
+        a.addElement("degaon");                                                //   calling the function
+        a.addElement("washim");
+        System.out.println("elements are="+a);
+        System.out.println("size of the array vector="+a.size());
+        System.out.println("capacity of the array="+a.capacity());
+    System.out.println("first element of the vector="+a.firstElement());
+    System.out.println("last element of the vector="+a.lastElement());
+    }
+}
