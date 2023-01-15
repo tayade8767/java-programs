@@ -1,0 +1,15 @@
+class employee
+{
+    float salary=100000;
+}
+class Main extends employee                                                   //   Main is a employee
+{                                                                      //  it is Main IS-A is employee
+    int bonous=10000;
+    public static void main(String args[])
+    {
+        Main p=new Main();
+        System.out.println("salary of the employee="+p.salary);
+        System.out.println("bonous of the employee="+p.bonous);
+        
+    }
+}
