@@ -1,0 +1,31 @@
+class A                                                                             // A super class 
+{
+    void x()
+    {
+        System.out.println("A is super class");
+    }
+}
+class B extends A                                                                      //   B is subclass of A
+{
+    void y()
+    {
+        System.out.println("B is derived class of A");
+    }
+}
+class C extends B                                                                    //   B is subclass of C
+{
+    void z()
+    {
+        System.out.println("C is the derived class of B");
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        C c=new C();
+        c.x();
+        c.y();
+        c.z();
+    }
+}
