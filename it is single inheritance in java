@@ -1,0 +1,25 @@
+
+class Animal                                                                            //  it is the class base/parent/super class
+{ 
+    void single()
+    {
+    System.out.println("it is the single inheritance");
+    }
+}
+class Tiger extends Animal                                                        //   it is the derived/child/sub   class
+{
+    void aka()
+    {
+    System.out.println("it is the class tiger extends class animal");
+    }
+}
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Tiger t=new Tiger();                                             //    creating and calling the method
+        t.single();
+        t.aka();
+    }
+}
