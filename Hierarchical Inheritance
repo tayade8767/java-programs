@@ -1,0 +1,32 @@
+class A
+{
+    void x()
+    {
+        System.out.println("A iss the super class");
+    }
+}
+class B extends A
+{
+    void y()
+    {
+        System.out.println("B is the sub class A");
+    }
+}
+class C extends A
+{
+    void z()
+    {
+        System.out.println("B is the sub class A");
+    }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        C t=new C();
+        B s=new B();
+        t.z();
+        t.x();
+       s.y();
+    }
+}
