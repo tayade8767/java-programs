@@ -1,0 +1,31 @@
+import java.util.Scanner;                  //  importing all package
+import java.util.*;
+class A
+{
+    int x(int n)
+    {
+        return n*n;
+    }
+}
+class B
+{
+    A a=new A();
+    int y(int radius)                           //  class A (HAS-A) realtion with class B
+    {
+       int p=a.x(radius); 
+       return p*3;
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int result,n;
+        System.out.print("enter the number::");
+        n=sc.nextInt();
+        B b=new B();
+       result=b.y(n);
+       System.out.println("result of the operation::"+result);
+    }
+}
