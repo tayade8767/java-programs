@@ -1,0 +1,38 @@
+ class Akash                                                    //    this is the class super
+{
+    int age;
+    String name;
+     Akash(int age,String name)
+    {
+        this.age=age;
+        this.name=name;
+    }
+}
+ class Vikee                                              //   it is the derived class 
+{
+    int id;
+    Akash a;                                   //  passing the object of the class
+    Vikee(int id,Akash a)                                                            //    collecting the object of the class
+    {
+        this.id=id;
+        this.a=a;                                    //  assign the object of the class to the object
+    }
+    void display()
+    {
+         System.out.println("name="+a.name+"  age="+a.age+" id="+id);
+    }
+}
+public class Jay
+{
+    public static void main(String args[])
+    {
+        Akash a1=new Akash(10,"akash");                         //   creating the object of the super class
+        Akash a2=new Akash(12,"jay");
+        
+        Vikee v1=new Vikee(2021,a1);
+        Vikee v2=new Vikee(2022,a2);                          //  creating the constructer   and passing the object of the super class
+        
+        v1.display();
+        v2.display();                                    //   displaying the values
+    }
+}
