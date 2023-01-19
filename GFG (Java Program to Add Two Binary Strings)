@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Akash
+{
+  public void binary_to_add(String x,String y)
+    {
+        int a=Integer.parseInt(x,2);                                             //   to convert the string to decimal
+        int b=Integer.parseInt(y,2);
+        int sum=a+b;
+        String result=Integer.toBinaryString(sum);                             //   to convert String to decimal
+        System.out.println("addition of the two string="+result);
+    }
+    public static void main(String args[])
+    {
+        //   Java Program to Add Two Binary Strings
+        Scanner s=new Scanner(System.in);
+        Akash c=new Akash();
+        String a;
+        String b;
+        System.out.println("entert the number 1::");
+        a=s.nextLine();
+        System.out.println("enter the string 2::");
+        b=s.nextLine();
+        c.binary_to_add(a,b);
+    }
+}
