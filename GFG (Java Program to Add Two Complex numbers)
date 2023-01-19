@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Akash
+{
+    int img,real;
+    public Akash(int real,int img)
+    {
+        this.real=real;
+        this.img=img;
+    }
+    void display()
+    {
+        System.out.println("complex number="+real+"+i"+img);                          //   Java Program to Add Two Complex numbers
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the real number::");
+        int a=s.nextInt();
+        System.out.print("enter the complex number::");
+        int b=s.nextInt();
+        Akash m=new Akash(a,b);
+        m.display();
+    }
+}
+
+
+
+                                                                      //Java Program to Add Two Complex numbers
