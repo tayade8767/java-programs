@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Akash
+{
+    static void sum(int a,int b)
+    {
+        System.out.println("addition of the two number="+(a+b));
+    }
+    static void sum(int a,int b,int c)
+    {
+        System.out.println("addition of the three number="+(a+b+c));
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number 1::");
+        int a=s.nextInt();
+        System.out.print("enter the number 2::");
+        int b=s.nextInt();
+        System.out.print("enter the number 3::");
+        int c=s.nextInt();
+        Akash m=new Akash();
+        sum(a,b);
+        sum(a,b,c);
+    }
+}
