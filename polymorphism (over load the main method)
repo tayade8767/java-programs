@@ -1,0 +1,11 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+       System.out.println("akash"); 
+    }
+    public static void main(String args)
+    {
+       System.out.println("akasherzyo'et"); 
+    }
+}
