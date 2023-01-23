@@ -1,0 +1,16 @@
+public class Akash
+{
+    static void sum(int a,long b)                                          // it can be done by lower to the higher type
+    {
+        System.out.println("additon of the number="+(a+b));
+    }
+    static void sum(int a,int b,int c)
+    {
+       System.out.println("addition of 3 number="+(a+b+c));
+    }
+    public static void main(String args[])
+    {
+        sum(10,22);
+        sum(1212,2323,3434);
+    }
+}
