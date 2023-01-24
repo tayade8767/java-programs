@@ -1,0 +1,19 @@
+ class Bike
+{
+    void display()
+    {
+      System.out.println("it is the bike"); 
+    }
+}
+public class Bycycle extends Bike
+{
+    void display()
+    {
+        System.out.println("it is the bycycle");
+    }
+    public static void main(String args[])
+    {
+        Bycycle b=new Bycycle();
+        b.display();
+    }
+}
