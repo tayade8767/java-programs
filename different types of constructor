@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Akash
+{
+    public Akash()
+    {
+  System.out.println("this is the non parameterized OR the no orgument constructor");
+    }
+    public Akash(int a,int b)
+    {
+  System.out.println("this is the parameterized OR the no orgument constructor "+ a+" "+b);
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the number 1::");
+        int a=sc.nextInt();
+        System.out.print("enter the numebr 2::");
+        int b=sc.nextInt();
+        Akash m=new Akash();
+        Akash n=new Akash(a,b);
+    }
+}
