@@ -1,0 +1,19 @@
+class Animal
+{
+    void display()
+    {
+        System.out.println("it is animal");
+    }
+}
+public class Bear extends Animal                                                   //    it is the (IS-A relation ofthe inheritence)
+{
+    void display()
+    {
+        System.out.println("it is Bear");
+    }
+    public static void main(String args[])
+    {
+        Bear b=new Bear();                                                     //   calling to the method
+        b.display();                                                         //   creating an object of the class
+    }
+}
