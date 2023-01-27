@@ -1,0 +1,21 @@
+class Parent                      // parent class
+{
+    String colour="GREEN";
+}
+class child extends Parent                                              //  child class extends parent class    //  IS-A relation
+{
+    String colour="RED";
+    void display()
+    {
+        System.out.println("child class colour "+colour); 
+        System.out.println("parent class colour "+super.colour);                      //  creating an implicit object of the parent class called using super keyword
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        child c=new child();
+        c.display();
+    }
+}
