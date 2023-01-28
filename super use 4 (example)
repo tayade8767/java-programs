@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Soda
+{
+    int id;
+    String name;
+    Soda(int id,String name)
+    {
+        this.id=id;
+        this.name=name;
+    }
+}
+class Water extends Soda
+{
+    float salary;
+    Water(int id,String name,float salary)
+    {
+        super(id,name);                                                        //    calling to the constructor of the parent class
+        this.salary=salary;
+    }
+    void display()
+    {
+        System.out.println(id+" "+name+" "+salary);
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the id::");
+        int id=sc.nextInt();
+        System.out.print("enter the name::");
+        String name=sc.next();
+        System.out.print("enter the salary::");
+        float salary=sc.nextFloat();
+        Water w=new Water(id,name,salary);
+        w.display();
+    }
+}
