@@ -1,0 +1,22 @@
+class Window 
+{
+    Window()
+    {
+        System.out.println("it is the parent class constructor");
+    }
+}
+class Glass extends Window
+{
+    Glass()
+    {
+        // super();                                                //   it can called implictly without creating super() 
+        System.out.println("it is the child class constructor");
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Glass g=new Glass();
+    }
+}
