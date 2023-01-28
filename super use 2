@@ -1,0 +1,31 @@
+class Animal
+{
+    void bus()
+    {
+        System.out.println("it is parent class method for bus");
+    }
+}
+class cat extends Animal                                                          //  inheritance in java      (IS-A relation)
+{
+    void bus()
+    {
+        System.out.println("it is child class method");
+    }
+    void car()
+    {
+        System.out.println("it is child class method for car");
+    }
+    void display()
+    {
+        car();                                  //      calling to the child class method
+        super.bus();                    //  it is use to called to the parent class method 
+    }                              // super can create the object/instance of the parent class implecitly     and to that call to the parent class method
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        cat c=new cat();                                           //  creating an object of the child class
+        c.display();                                  //  calling to the method
+    }
+}
