@@ -1,0 +1,25 @@
+class Parent
+{
+    Parent()
+      {
+          System.out.println("parent class constructor is called");
+      }
+}
+
+public class Child extends Parent
+{
+      Child()
+       {
+           super();
+           System.out.println("child class constructor is called");
+       }
+       
+       {                                                               //instance initializer block
+           System.out.println("instance initializer block is called");//it generate the copy of the block and paste after the  super() and befor the statement is to be print
+       }                                                                 //   2nd position in the child class constructor
+       
+    public static void main(String args[])
+    {
+        Child a=new Child();                          //  calling to the constructor of the child class
+    }
+}
