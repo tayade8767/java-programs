@@ -1,0 +1,18 @@
+public class Akash
+{
+    int speed;
+    void display()
+       {
+           System.out.println("speed="+speed);
+       }
+       
+       {
+           speed=100;                         //instance initializer block generate the copy of the block and paste in the method  is to called 
+       }
+       
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                         //    object of the class is created 
+        a.display();                          //   calling to the method
+    }
+}
