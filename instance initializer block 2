@@ -1,0 +1,16 @@
+public class Akash
+{
+      Akash()
+       {
+           System.out.println("constructor is called");
+       }
+       
+       {        //  instance initializer block generate the copy of the of the block and paste in the constructor before the 1st position of the constructor
+           System.out.println("instance initializer block is called");                      //instance initializer block is called before the constructor is to be called
+       }
+       
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                                            //  calling to the constructor
+    }
+}
