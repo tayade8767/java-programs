@@ -1,0 +1,22 @@
+
+
+                       ///final keyword can not be change it can be gives the compile time error
+
+
+
+
+
+
+
+public class Akash
+{
+    public static void main(String args[])
+    {
+        final int a=10;
+        a=20;
+        System.out.println(a);
+    }
+}
+
+
+
