@@ -1,0 +1,23 @@
+
+                                           //  final class can not inherite the charactrics from the parent class
+
+
+final class Parant
+{
+    void run()
+    {
+        System.out.println("it is running");
+    }
+}
+public class Child extends Parant
+{
+    void run()
+    {
+        System.out.println("it is the child class");
+    }
+    public static void main(String args[])
+    {
+         Child c=new Child();
+         c.run();
+    }
+}
