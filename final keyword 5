@@ -1,0 +1,28 @@
+ 
+ 
+ 
+ 
+                          //  final method can be run but we can not override it
+ 
+ 
+ 
+ 
+ class Parant
+{
+   final void run()
+    {
+        System.out.println("it is running");
+    }
+}
+public class Child extends Parant
+{
+    // void run()
+    // {
+    //     System.out.println("it is the child class");
+    // }
+    public static void main(String args[])
+    {
+         Child c=new Child();
+         c.run();
+    }
+}
