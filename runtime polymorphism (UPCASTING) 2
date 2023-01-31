@@ -1,0 +1,41 @@
+class Bank
+{
+    float interest()
+    {
+        return 0;
+    }
+}
+class SBI extends Bank
+{
+    float interest()
+    {
+        return 7.6f;
+    }
+}
+class ICICI extends Bank                             //    IS-A relation
+{
+    float interest()
+    {
+        return 5.4f;
+    }
+}
+class AXIS extends Bank                           //    in which AXIS is a bank
+{
+    float interest()
+    {
+        return 9.9f;
+    }
+}
+public class Parent
+{
+    public static void main(String args[])
+    {
+        Bank b;                                                                    //    object of the parent class
+         b=new SBI();                                                     // it is the child class of the parent class bank
+     System.out.println("rate of interest of SBI bank is "+b.interest());                  //   calling  to the child class
+         b=new ICICI();
+     System.out.println("rate of interest of ICICI bank is "+b.interest());
+         b=new AXIS();
+     System.out.println("rate of interest of AXIS bank is "+b.interest());
+    }
+}
