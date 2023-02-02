@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the string::");
+        String a=s.next();
+        StringBuffer b=new StringBuffer(a);                             //    we can push the string data into the StringBuffer and to the method using the object
+        System.out.println("reverse of the string="+b.reverse());
+    }
+}
