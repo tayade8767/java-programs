@@ -1,0 +1,8 @@
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();
+        System.out.println(a instanceof Akash);                           //  in which (a is instanceof Akash)
+    }
+}
