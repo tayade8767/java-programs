@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Akash
+{
+    public boolean akash(String a,String b)
+    {
+        if(a.length()!=b.length())
+        {
+            return false;
+        }
+        else
+       {
+           char[] arr1=a.toCharArray();                                      //   converting the string to character array
+           Arrays.sort(arr1);                                                 //  sorting the character array
+           char[] arr2=b.toCharArray();
+           Arrays.sort(arr2); 
+           a=Arrays.toString(arr1);                                       //   converting the character array to string
+           b=Arrays.toString(arr2);
+           if(a.equals(b))                                              //comparing the string
+           {
+           return true;
+           }else
+           {
+               return false;
+           }
+       }
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        Akash z=new Akash();
+        System.out.print("enter the string 1::");
+        String a=s.next();
+        System.out.print("enter the string 2::");
+        String b=s.next();
+        System.out.print(a+" and "+b+" are equal its "+ z.akash(a,b));                 calling  the method
+       
+    }
+}
