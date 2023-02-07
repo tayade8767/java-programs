@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ class main {
+    public void dub(String a) {
+        StringBuffer b=new StringBuffer(a);
+        b.reverse();
+        String c=b.toString();
+        if(a.equals(c))
+        {
+            System.out.println("String is palandrome");
+        }else
+        {
+            System.out.println("String is not palandrome");
+        }
+        }
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        main a=new main();
+        System.out.print("enter the String::");
+         String base=sc.next();
+        a.dub(base);
+    }
+}
