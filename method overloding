@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Akash
+{
+    public int rectangle(int a,int b)
+    {
+        return a*b;
+    }
+    public double triangle(int radius)
+    {
+        return radius*radius*Math.PI;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        Akash a=new Akash();
+        System.out.print("enter the base::");
+        int base=sc.nextInt();
+        System.out.print("enter the heigth::");
+        int heigth=sc.nextInt();
+        System.out.print("enter the radius::");
+        int radius=sc.nextInt();
+        System.out.println("area of rectangle="+a.rectangle(base,heigth));
+        System.out.println("area of circle="+a.triangle(radius));
+        
+    }
+}
