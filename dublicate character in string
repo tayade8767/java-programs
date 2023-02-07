@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Akash
+{
+    public void dub(String m)
+    {
+        int n=m.length();
+        int count=0;
+        char[] a=m.toCharArray();
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(a[i]==a[j])
+                {
+                System.out.println(a[i]+" is dublicate");  
+                }else
+                {
+                count++;
+                }
+            }
+        }
+        if((count/2)==n)
+        {
+             System.out.println("nothing is dublicate"); 
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        Akash a=new Akash();
+        System.out.print("enter the String::");
+        String base=sc.next();
+        a.dub(base);
+    }
+}
