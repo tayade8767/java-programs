@@ -1,0 +1,16 @@
+abstract class Parent                                                           //     abstract class
+{
+    abstract void run();                                                     //     abstract method
+}
+public class Child extends Parent
+{
+    void run()
+    {
+        System.out.println("bike is running very fast");
+    }
+    public static void main(String args[])
+    {
+        Parent p=new Child();                                             //   downcasting
+        p.run();
+    }
+}
