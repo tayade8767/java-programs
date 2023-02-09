@@ -1,0 +1,26 @@
+abstract class Parent                                                         //    abstract class 
+{
+    abstract void akash();                                                 //   abstract method 
+}
+class Rectangle extends Parent                                        //   Rectangle extends the Parent class
+{
+    void akash()
+    {
+        System.out.println("it is the rectangle");
+    }
+}
+class Circle extends Parent                                           //    class Circle extends  Parent 
+{
+    void akash()
+    {
+        System.out.println("it is the circle");                              //  WE CREATE THE HIRARCHY OF THE CLASS
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Parent p=new Circle();                              //   down casting of the class   
+        p.akash();
+    }
+}
