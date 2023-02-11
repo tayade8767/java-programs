@@ -1,0 +1,28 @@
+abstract class Parent
+{
+    Parent()
+    {
+        System.out.println("construtor is called");
+    }
+    abstract void run();
+    void akash()
+    {
+        System.out.println("method is called in abstract class of parent");
+    }
+}
+class Child extends Parent
+{
+    void run()
+    {
+        System.out.println("method is called in child class");
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+     {
+         Parent p=new Child();
+         p.akash();
+         p.run();
+     }
+}
