@@ -1,0 +1,19 @@
+interface Principle
+{
+    void akash();
+}
+class ak implements Principle                                            // class ak implements the Principle
+{
+   public void akash()
+    {
+        System.out.println("it is the child class");
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        ak a=new ak();
+        a.akash();
+    }
+}
