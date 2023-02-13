@@ -1,0 +1,29 @@
+interface Drawable                                        //   it is interface class 
+{
+    void ak();                                    //internally adding the abstract to the void ak();
+}
+class Rectangle implements Drawable                               //    rectangle implements drawable
+{
+    public void ak()
+    {
+        System.out.println("it is rectangle");
+    }
+}
+class Circle implements Drawable                       //    circle implements drawable
+{
+    public void ak()
+    {
+        System.out.println("it is circle");
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Drawable a;
+        a=new Rectangle();
+        a.ak();
+        a=new Circle();
+        a.ak();
+    }
+}
