@@ -1,0 +1,28 @@
+interface Printable                                                             //  interface printciple
+{
+   void print();                       //  adding the abstract internally
+}
+interface Showable                                                    //  interface printciple
+{
+    void show();                       //  adding the abstract internally
+}
+class Akash implements Printable,Showable                             //multiple inheritance using the interface 
+{
+    public void print()
+    {
+        System.out.println("inplements the Printable interface");
+    }
+    public void show()
+    {
+        System.out.println("implements the Showable interface");
+    }
+}
+public class ak
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                                            //  creating the object of the Akash() class
+        a.print();
+        a.show();                                              //  calling to the method of present in the that class
+    }
+}
