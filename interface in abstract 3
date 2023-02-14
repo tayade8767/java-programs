@@ -1,0 +1,41 @@
+interface Bank
+{
+    double interest();                    //internal adding of the abstract before the double
+}
+class SBI implements Bank                       //  SBI implements bank
+{
+  public double interest()
+    {
+        return 12.2;
+    }
+}
+class ICICI implements Bank                 //  ICICI implements bank
+{
+   public double interest()
+    {
+        return 9.9;
+    }
+}
+class AXIS implements Bank                             //  AXIS implements bank
+{
+   public double interest()
+    {
+        return 6.6;
+    }
+}
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Bank b;
+        
+        b=new SBI();                                                              //   calling to the method which can be implemented y other class
+        System.out.println("Rate of interest of SBI bank is "+b.interest());
+        
+        b=new ICICI();
+        System.out.println("Rate of interest of SBI bank is "+b.interest());
+        
+        b=new AXIS();
+        System.out.println("Rate of interest of SBI bank is "+b.interest());
+    }
+}
