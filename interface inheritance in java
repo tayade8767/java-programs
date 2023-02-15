@@ -1,0 +1,28 @@
+interface Principle
+{
+    void Show();
+}
+interface Teacher extends Principle
+{
+    void Print();
+}
+class Akash implements Teacher
+{
+   public void Show()
+    {
+        System.out.println("it is interface inheritance");
+    }
+   public void Print()
+    {
+        System.out.println("class Akash implements Teacher");
+    }
+}
+public class Vikee 
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();
+        a.Show();
+        a.Print();
+    }
+}
