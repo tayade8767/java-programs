@@ -1,0 +1,11 @@
+
+class Akash{
+    private int x=10;
+}
+
+public class private_modolifier {
+public static void main(String args[]){
+    Akash a=new Akash();
+System.out.println(("private modilifier::"+a.x));
+}
+}
