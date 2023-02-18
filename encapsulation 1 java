@@ -1,0 +1,23 @@
+
+class A 
+{
+    private String name;                                    //   private string 
+    
+    public String get_name()                                          //       get the value from the get method using getter method
+    {
+        return  name;
+    }
+    public void set_name(String name)                              //   set the value in name of encapsulation class
+    {
+        this.name=name;
+    }
+}
+
+
+public class Encapsulation {
+    public static void main(String args[]){
+        A a=new A();
+        a.set_name("akash_tayade");
+    System.out.println("name of the student is "+a.get_name());
+    }
+}
