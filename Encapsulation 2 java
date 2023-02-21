@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+class Akash
+{
+    private String name;
+    public void setak(String name)
+    {
+        this.name=name;
+    }
+
+    public String getak()
+    {
+           return name;
+    }
+}
+
+
+public class Encapsulation2 {
+    public static void main(String args[]){
+
+        Scanner sc=new Scanner(System.in);
+        Akash a=new Akash();
+        System.out.print("enter the string::");
+         String b=sc.nextLine();
+         a.setak(b);
+         System.out.println("name in getter and setter="+a.getak());    
+    }
+    
+}
