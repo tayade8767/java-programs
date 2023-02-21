@@ -1,0 +1,45 @@
+
+import java.awt.*;
+import java.awt.event.*;
+
+class Add extends Frame implements ActionListener
+{
+    int count=0;
+    Label l;
+    TextField tf;
+    Button b;
+    
+    public Add()
+    {
+        
+        Super("akash tayade");
+        l=new Label();
+        setLayout(new FlowLayout());
+        tf=new TextField(2);
+        b=new Button("Click");
+        b.addActionListener(this);
+
+        add(l);
+        add(tf);
+        add(b);
+
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        count++;
+        l.setText("  "+count);
+    }
+
+    private void Super(String string) {
+    }
+
+} 
+
+public class framework4_event 
+{
+      public static void main(String args[]){
+      Add a=new Add();
+      a.setSize(300,300);
+        a.setVisible(true);  
+      }
+}
