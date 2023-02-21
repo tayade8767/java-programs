@@ -1,0 +1,30 @@
+
+
+import java.awt.*;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+class Myframe extends JFrame
+{
+     public Myframe()
+     {
+        setLayout(new FlowLayout());
+        JLabel l=new JLabel("Hello world");
+        JLabel l1=new JLabel("Akash Tayade");
+        add(l);
+        add(l1);
+        setVisible(true);
+        setSize(200,300);
+     }
+}
+
+
+
+public class Framework4 
+{
+    public static void main(String args[])
+    {
+          Myframe mf=new Myframe();
+    }
+}
