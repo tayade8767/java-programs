@@ -1,0 +1,35 @@
+import java.awt.*;
+
+public class Framework3 extends Frame{
+
+
+    Label l;
+    TextField tf;
+    Button b;
+
+    public Framework3()
+    {
+
+       Super("clculater");
+        setLayout(new FlowLayout());
+
+        l=new Label("name");
+        tf=new TextField(20);
+        b=new Button("Click");
+
+        add(l);
+        add(tf);
+        add(b);
+
+    }
+    
+    private void Super(String string) {
+    }
+
+    public static void main(String args[])
+    {
+        Framework3 fm=new Framework3();
+        fm.setSize(300,300);
+        fm.setVisible(true);
+    }
+}
