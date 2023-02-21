@@ -1,0 +1,24 @@
+
+class Akash
+{
+    int i;
+}
+class Tayade extends Akash{
+    int j;
+    void Display()
+    {
+        super.i=j+1;
+        System.out.println(i+"   "+j);
+    }
+}
+
+
+
+public class Super1 {
+    public static void main(String args[]){
+           Tayade t=new Tayade();
+           t.i=1;
+           t.j=2;
+           t.Display();
+    }
+}
