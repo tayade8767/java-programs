@@ -1,0 +1,35 @@
+
+import java.awt.*;
+
+class Myframe extends Frame{
+    Label l;
+    TextField tf;
+    Button b;
+    public Myframe()
+    {
+
+       Super("clculater");
+        setLayout(new FlowLayout());
+
+        l=new Label("name");
+        tf=new TextField(20);
+        b=new Button("Click");
+
+        add(l);
+        add(tf);
+        add(b);
+
+    }
+    private void Super(String string) {
+    }
+    
+}
+
+public class Framework2 {
+    public static void main(String args[]){
+          Myframe mf=new Myframe();
+
+          mf.setSize(300,300);
+          mf.setVisible(true);
+    }
+}
