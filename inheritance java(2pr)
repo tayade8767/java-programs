@@ -1,0 +1,30 @@
+import java.util.*;
+class employee {
+    public String name;
+    public String add;
+    public int mob;}
+class programmer extends employee {
+    public String[] pl = {"C language","java","JAVA Script"};
+    public void writecode() {
+        System.out.println("In progess");
+    }}
+class manager extends employee {
+    public int ts=10;
+    public void projectStatus() {
+        System.out.println("In progess");
+    }}
+public class inhe {
+    public static void main(String[] args) {
+        programmer p=new programmer();
+        p.name="TANMAY";
+        p.add="RAMTEKE";
+        System.out.println("programmer name " + p.name);
+        System.out.println("programmer  add " + p.add);
+        p.writecode();
+        manager q=new  manager();
+        q.name="TANMAY";
+        q.add="RAMTEKE";
+        System.out.println(" manager name " + q.name);
+        System.out.println(" manager  add " + q.add);
+        q.projectStatus();
+    }}
