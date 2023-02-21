@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Method1 
+{
+    int a,b;
+    public void Akash(int a,int b)
+    {
+         this.a=a;
+         this.b=b;
+    }
+    int sum()
+    {
+        return a+b;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+           Method1 a=new Method1();
+           System.out.print("enter the number 1::");
+           int b=sc.nextInt();
+           System.out.print("enter the number 1::");
+           int c=sc.nextInt();
+           a.Akash(b,c);
+           System.out.println("Sum of the two number="+a.sum());
+    }
+}
