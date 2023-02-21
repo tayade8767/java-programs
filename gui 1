@@ -1,0 +1,18 @@
+import java.awt.*;
+public class Framework1 {
+    public static void main(String args[]){
+       Frame f=new Frame("akash tayade");
+       f.setLayout(new FlowLayout());
+
+       Button b=new Button("ok");
+       Label l=new Label("name");
+       TextField tf=new TextField(30);
+
+       f.add(l);
+       f.add(tf);
+       f.add(b);
+
+      f.setSize(300,300); 
+       f.setVisible(true);
+    }
+}
