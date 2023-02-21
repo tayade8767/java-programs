@@ -1,0 +1,65 @@
+
+
+import java.util.Scanner;
+
+class Akash
+{
+    private long Acc_no;
+    private String name,password;
+    
+    public void setpassword(String password)                         //set the password
+    {
+        this.password=password;
+    }
+    String getpassword()                                            //   get the password
+    {
+        return password;
+    }
+
+    public void setname(String name)                                 //set the name
+    {
+        this.name=name;
+    }
+    String getname()                                                        //   get the name
+    {
+        return name;
+    }
+
+    public void setAcc_no(long Acc_no)                            //set the account number
+    {
+        this.Acc_no=Acc_no;
+    }
+    long getAcc_no()                                                      //   get the Account number
+    {
+        return Acc_no;
+    }
+
+}
+
+
+
+public class Encapsulation3 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+          Akash a=new Akash();
+          System.out.print("enter the name::");                                //     calling to the set methods and set the values
+          String name=sc.nextLine();
+          a.setname(name);
+
+          System.out.print("enter the password::");
+          String password=sc.nextLine();
+          a.setpassword(password);
+
+          System.out.print("enter the Account number::");
+          long Acc_no=sc.nextLong();
+          a.setAcc_no(Acc_no);
+
+          System.out.println("name of the person="+a.getname());                                     //   calling to the get methods
+          System.out.println("account number="+a.getAcc_no());
+          System.out.println("password of the account="+a.getpassword());
+
+    }
+    
+}
