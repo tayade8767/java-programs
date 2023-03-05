@@ -1,0 +1,111 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+                                                                                         
+class Akash extends JFrame implements ActionListener 
+{                                           
+    JTextField t1,t2;
+    JButton b1;
+    JButton b2;
+    JButton b3;
+    JButton b4;
+    JLabel l1;
+    public Akash()
+    {
+	 JFrame f = new JFrame("My Frame");
+
+        t1=new JTextField(20);
+        t2=new JTextField( 20);
+        b1=new JButton("ADD");
+        b2=new JButton("SUB");
+        b3=new JButton("MULTI");
+        b4=new JButton("DIV");
+        l1=new JLabel("Result");
+
+        
+        add(t1);
+        add(t2);
+        add(b1);
+        add(b2);
+        add(b3);
+        add(b4);
+        add(l1);
+        
+       b1.addActionListener(   ae -> 
+       {
+
+        int num1=Integer.parseInt(t1.getText());
+         int num2=Integer.parseInt(t2.getText());
+
+          int value=num1+num2;
+
+         l1.setText(value+"");
+       }
+       
+       );
+
+        b2.addActionListener(  ae -> 
+
+        {
+            int num1=Integer.parseInt(t1.getText());
+            int num2=Integer.parseInt(t2.getText());
+
+            int value=num1-num2;
+            l1.setText(value+"");
+        }
+
+        );
+
+        b3.addActionListener(  ae -> 
+
+        {
+            int num1=Integer.parseInt(t1.getText());
+            int num2=Integer.parseInt(t2.getText());
+
+            int value=num1*num2;
+            l1.setText(value+"");
+        }
+
+        );
+
+        b4.addActionListener(  ae -> 
+
+        {
+            int num1=Integer.parseInt(t1.getText());
+            int num2=Integer.parseInt(t2.getText());
+
+            int value=num1/num2;
+            l1.setText(value+"");
+        }
+
+        );
+        
+        setLayout(new FlowLayout());
+        setVisible(true);
+        setSize(400,400);
+        setDefaultCloseOperation(3);
+    }
+    // public void actionPerformed(ActionEvent ae)
+    // {
+    //      int num1=Integer.parseInt(t1.getText());
+    //      int num2=Integer.parseInt(t2.getText());
+
+    //      int value=num1+num2;
+
+    //      l1.setText(value+"");
+    // }
+}
+
+
+public class Jay
+{
+    public static void main(String args[])
+    {
+        Akash a = new Akash();
+    }
+}
