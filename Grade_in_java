@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class Grade {
+    Scanner s=new Scanner(System.in);
+    int n=5,i;
+
+   // System.out.println("enter the number of subjects::");
+   // n=s.nextInt();
+    int mark[]=new int[n];
+    
+    void input_marks()
+    {
+    
+    System.out.println();
+        System.out.println("marks can be taken by computer directly");
+        System.out.println();
+        for(i=0;i<mark.length;i++)
+        {
+        int k=(int) (Math.random()*(100-0+1)+0);
+            mark[i]=k;
+        }
+        for(i=0;i<mark.length;i++)
+        {
+            System.out.println("marks of the subject "+i+"::"+mark[i]);
+        }
+     }
+     
+     void display_grades()
+     {
+         for(i=0;i<mark.length;i++)
+         {
+             if(mark[i]<=100&&mark[i]>=90)
+             {
+                 System.out.println(i+" subject grade=A+");
+             }else if(mark[i]<90&&mark[i]>=80)
+             {
+                 System.out.println(i+" subject grade=A");
+             }
+             else if(mark[i]<80&&mark[i]>=70)
+             {
+                 System.out.println(i+" subject grade=B+");
+             }
+             else if(mark[i]<70&&mark[i]>=60)
+             {
+                 System.out.println(i+" subject grade=B");
+             }
+             else if(mark[i]<60&&mark[i]>=50)
+             {
+                 System.out.println(i+" subject grade=C+");
+             }
+             else if(mark[i]<50&&mark[i]>=40)
+             {
+                 System.out.println(i+" subject grade=C");
+             }else if(mark[i]<40&&mark[i]>=35)
+             {
+                 System.out.println(i+" subject grade=D");
+             }
+             else 
+             {
+                 System.out.println(i+" subject fails with grade=F ");
+             }
+         }
+     }
+     
+    public static void main(String args[])
+    {
+        Grade z=new Grade();
+        z.input_marks();
+        z.display_grades();
+    }
+}
