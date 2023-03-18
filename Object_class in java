@@ -1,0 +1,21 @@
+public class Object_class                                       //creating a class in java
+{
+     public String toString()
+     {
+          return "Akash";
+     }
+     public int hashCode()
+     {
+          return 100;
+     }
+  public static void main(String args[])
+     {
+          Object_class a=new Object_class();                       //   creating a object a and b
+          Object_class b=new Object_class();
+           a=b;
+
+           System.out.println(a);                            //   when we print the object in java by default call to toString method and it can be overite
+           System.out.println(a.hashCode());             // Object class Method and it can be overite
+           System.out.println(a.equals(b));           // Object class Method and it can be overite
+     }  
+}
