@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Math_class {
+    public static void main(String args[])
+    {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter the 1st number::");
+       int a=sc.nextInt();
+       System.out.print("Eneter the 2nd number::");
+       int b=sc.nextInt();
+
+       System.out.println("ALL THE METHODS OF THE MATH CLASS");
+
+       System.out.println("Maximum in 2 number::"+Math.max(a,b));
+       System.out.println("Manimum in 2 number::"+Math.min(a,b));
+
+       System.out.println("Power method in 2 number::"+Math.pow(a,b));
+       System.out.println("Exponential of number::"+Math.exp(a));
+       System.out.println("logarithmic value::"+Math.log(a));
+       System.out.println("logarithmic value log10::"+Math.log10(a));
+       System.out.println("Squre of number::"+Math.sqrt(a));
+       System.out.println("Cube of number::"+Math.cbrt(a));
+
+       System.out.println("Sin value::"+Math.sin(a));
+       System.out.println("cos value::"+Math.cos(a));
+       System.out.println("tan value::"+Math.tan(a));
+       System.out.println("aSin(a) value::"+Math.asin(a));
+       System.out.println("acos(a) value::"+Math.acos(a));
+       System.out.println("atan(a) value::"+Math.atan(a));
+
+       System.out.println("Random value in between range of 0 to 1 value::"+Math.random());
+       System.out.println("Sign of the given number::"+Math.signum(a));
+       System.out.println("absolute of the given number::"+Math.abs(a));
+
+       System.out.println("Sign of the given number::"+Math.ceil(a));
+
+
+    }
+}
