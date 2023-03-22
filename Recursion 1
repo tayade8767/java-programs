@@ -1,0 +1,12 @@
+public class Resursion {
+    void akash()                                                     //   Calling to the method it self by using the Recursion 
+    {
+        System.out.println("akash tayade");
+        akash();                                            //   Calling to the method
+    }
+    public static void main(String args[])
+    {
+        Resursion a=new Resursion();
+        a.akash();                                                             //   Calling to the method
+    } 
+}
