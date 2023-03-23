@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Recursion_2 {
+    int n1=0,n2=1,n3;
+    void Fibo(int n)
+    {
+        if(n>0)
+        {
+            n3=n2+n1;
+            System.out.print(" "+n3);                            //printing the  series 
+            n1=n2;
+            n2=n3;
+            Fibo(n-1);
+        }
+
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number::");
+        int a=sc.nextInt();
+        Recursion_2 z=new Recursion_2();
+        System.out.print("0 1");
+        z.Fibo(a);     calling to the method
+    }
+}
