@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Call_by_value_1 
+{
+    int n=100;
+    void call(Call_by_value_1 x)                                             //   changing the value using object for object only 
+    {
+        x.n=x.n+1000;
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        Call_by_value_1 x=new Call_by_value_1();
+
+        Call_by_value_1 y=new Call_by_value_1();
+
+        // System.out.print("enter the number::");
+        // int n=sc.nextInt();
+
+        System.out.println("before value::"+x.n);                      //printing the value by using the object
+       x.call(x);                                        //passing the object
+       System.out.println("After value::"+x.n);          ////printing the value by using the object (updated value)
+
+    //   System.out.println("before value::"+y.n);
+    //    y.call(y);
+    //    System.out.println("After value::"+x.n);
+    }
+}
