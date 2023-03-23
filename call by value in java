@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Call_by_Value {
+    void call(int n)
+    {
+        n=n+1000;
+    }
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         Call_by_Value x=new Call_by_Value();
+         System.out.print("enter the number::");
+         int n=sc.nextInt();
+         System.out.println("before value::"+n);                           value is vary from function to function
+        x.call(n);
+        System.out.println("After value::"+n);
+    }
+}
