@@ -1,0 +1,10 @@
+public class Wrapper_class 
+{
+    public static void main(String args[])
+    {
+        int a=10;                                               //wrapper class is use for the converting the primitive into object and object into primitive
+        Integer i=Integer.valueOf(a);                //autoboxing                     in java
+        Integer j=a;
+    System.out.println(a+" "+i+" "+j);
+    }
+}
