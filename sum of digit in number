@@ -1,0 +1,19 @@
+/* Online Java Compiler and Editor */
+public class first{
+
+    public static void main(String []args){
+
+
+
+
+        int digit,n=12345;
+        int sum=0;
+        for(int i=0;i<5;i++)
+        {
+            digit=n%10;
+            sum=sum+digit;
+             n=n/10;
+        }
+       System.out.println("sum="+sum);
+    }
+}
