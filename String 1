@@ -1,0 +1,14 @@
+public class Stringclass_1
+ {
+    public static void main(String args[])
+    {
+           String s1="Akash";                                     //it can be created using the String literal
+            char a[]={'s','a','n','t','o','s','h'};
+            String s2=new String(a);                                //  converting character array into the using String method
+            String s3=new String("Tayade");               //  creating using the new keyword
+
+            System.out.println(s1);
+            System.out.println(s2);
+            System.out.println(s3);
+    }
+}
