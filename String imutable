@@ -1,0 +1,9 @@
+public class Stringclass_immutable 
+{
+    public static void main(String args[])
+    {
+           String s="akash";
+           s.concat("Tayade");
+           System.out.println(s);
+    }
+}
