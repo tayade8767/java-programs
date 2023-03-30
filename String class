@@ -1,0 +1,81 @@
+ import java.lang.String;
+public class Akash1
+{
+    public static void main(String args[])
+    {
+
+           // immutable string in java means the when we create the string in literal means using double qoutes string can be made in string constant pool means string can not be update
+           String s1="akash";
+          // s1.concat("welcome)";  
+             System.out.println("immutable string in java::"+s1);
+
+             //for comparing the string in java we can use the 3 types in java
+             //  1.using ==operater
+            //   2.using equals() method
+            //   3.compareTo() method
+            String s2=new String("Akash");
+            String s3=new String("Tayade");
+            System.out.println("Using == operater comparing String::"+(s2==s3));        //    1
+            System.out.println("Using Equals method comparing String::"+s3.equals(s2));        //    2
+            System.out.println("Using compareTo method comparing String::"+s3.compareTo(s2));        //    3   s3>s2 =  +value  s3<s2 =  -value s3=s2 = 0
+
+            // concatination of the string
+            // 1. concat() method
+            // 2. + operater
+            System.out.println("Using + operater concatination of String::"+(s2+s3));        //    1
+            System.out.println("Using concat method concatination of String::"+s3.concat(s2));        //    2
+
+            //   substring method to printing the substring
+            String s4=new String("Computer");
+            System.out.println("Using substring method::"+s4.substring(1,4));        
+
+             //   toUpperCase method to make string in uppercase
+             String s5=new String("Computer");
+             System.out.println("toUpperCase method::"+s4.toUpperCase());        
+
+             //   tolowerCase method to make string in lowerercase
+             System.out.println("toLowerCase method::"+s4.toLowerCase());       
+
+             
+             //   trim method to eliminate the white spaces
+             String s6=new String("  Information  ");
+             System.out.println("trim method::"+s6.trim());  
+             
+             //   startWith method to start the string
+             System.out.println("startWith method::"+s6.startsWith("I"));  
+
+             //  charAt method to find the character at that position
+             System.out.println("chatAt method::"+s6.charAt(3)); 
+             
+             //   length method to count the length of the string
+             System.out.println("length method::"+s6.length());  
+
+             //   intern method for craeting the only one string in string constant pool
+             String a=s6.intern();                                  //avoid the immuation of the string
+             System.out.println("intern method::"+a);  
+             
+             //   value of method to print the string
+             int b=20;
+             String c=String.valueOf(b);
+              System.out.println("length method::"+c+23);  
+
+              //   replace method to replace the contains  of the string
+             System.out.println("replace the contains of the string method::"+s6.replace("Info","AKASH"));  
+
+             //   replaceAll method to replace the contains  of the string
+             System.out.println("replaceAll the contains of the string method::"+s6.replaceAll("a","kkk"));  
+
+             //   contains method to fing contains  of the string is present or not
+             System.out.println("contains method to fing contains  of the string is present or not in string method::"+s6.contains("a"));  
+
+              //   lastIndexOf method to find the lastIndex of the string
+              System.out.println(" lastIndexOf method to find the lastIndex of the string method::"+s6.lastIndexOf("a"));  
+
+               //   isEmpty method to find the string is empty or not
+             System.out.println("isEmpty method to find the string is empty or not::"+s6.isEmpty());  
+
+              //   join method to join string
+              System.out.println("join method to join string::"+s6.join("aadadad","iiiiiiiiiiiiiii"));  
+
+    }
+}
