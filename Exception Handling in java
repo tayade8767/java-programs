@@ -1,0 +1,13 @@
+public class Exception_Handling 
+{
+    public static void main(String args[])
+    {
+         try{
+            int a=100/0; //   when we can try and then then it can be catch by the catch block and the other progran can be execute
+         }
+         catch(ArithmeticException e){
+            System.out.println("divide By Zero");                                        //catch block
+         }
+         System.out.println("Akash Tayade");
+    }
+}
