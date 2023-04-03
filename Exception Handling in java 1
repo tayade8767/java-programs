@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Akash
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number 1");
+        int a=sc.nextInt();
+         System.out.println("Enter the number 1");
+        int b=sc.nextInt();
+        try
+        {
+            int c=a/b;
+            System.out.println("c="+c);
+        }
+        catch(ArithmeticException e)                                                 //simple try catch block
+        {
+             System.out.println("It is divide by Zero"+e);    
+        }
+        System.out.println("Bye");
+    }
+}
