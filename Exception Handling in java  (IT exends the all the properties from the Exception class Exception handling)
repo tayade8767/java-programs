@@ -1,0 +1,35 @@
+
+class MyException extends Exception                          // MyException extends all the method and class from 
+{
+    public String toString()
+    {
+        return "it is Cheched UnChecked Exception";
+    }
+}
+
+public class chekuncheckedException 
+{
+    static void fun1()
+    {
+        try
+        {
+               throw new MyException();             // it is throw an exception in MyException class 
+        }
+        catch(MyException e)                  //  catch the exception from the MyException class 
+        {
+            System.out.println(e);       // pre build call the toString method
+        }
+    }
+    static void fun2()
+    {
+        fun1();                   //  call the fun1()
+    }
+    static void fun3()
+    {
+        fun2();                                  //  call the fun2()
+    }
+    public static void main(String args[])
+    {
+         fun3();                              //it is the hararchy of the function in which printstacktrace() method is use
+    }
+}
