@@ -1,0 +1,80 @@
+
+
+
+
+class StackOverflow extends Exception 
+{
+    public String toString()
+    {
+       return "it is overflow" ;
+    }
+}
+
+class StackUnderflow extends Exception 
+{
+       public String toString()
+       {
+           return " it is underflow" ;
+       }
+}
+
+public class StackException
+{
+    private int size;
+    private int top=-1;
+    private int s[];
+    public StackException(int sz)
+    {
+        size=sz;
+        s=new int[size];
+    }
+    public void push(int data) throws StackOverflow
+    {
+        if(top==(size-1))
+        {
+             throw new StackOverflow();
+        }
+        top++;
+        s[top]=data;
+    }
+    public void pop() throws StackUnderflow
+    {
+        if(top==-1)
+        {
+            throw new StackUnderflow();
+        }       
+        System.out.println(s[top]);
+        top--;
+    }
+     public static void main(String args[])
+     {
+            StackException a=new StackException(5);
+            try{
+                a.push(10);
+                a.push(11);
+                a.push(13);
+                a.push(14);
+                // a.push(15);
+                // a.push(0);
+                try
+                {
+                    a.pop();
+                    a.pop();
+                    a.pop();
+                    a.pop();
+                    a.pop();
+                    a.pop();
+                }
+                catch( StackUnderflow e)
+                {
+                    System.out.println(e);
+                }
+
+            }
+            catch(StackOverflow e)
+            {
+                System.out.println(e);
+            }
+            
+     }   
+}
