@@ -1,0 +1,36 @@
+// class Exception1 extends Exception
+// {
+//     public String toString()
+//     {
+//         System.out.println("wefweaer");
+//     }
+//       return "asmsk";
+// }
+public class Akash
+{
+   public static int area(int a,int b) throws Exception //when throw Exception catch the by throws Ecception and this exception goes back to the previous function  
+    {
+        if(a<=0 || b<=0)
+        {
+            throw new Exception(); //when the value of a or b are less than 0
+           // then it throw the Exception to throws Exception
+        }
+        return a*b;
+    }
+  public static void method1()
+    {
+        try
+        {
+            int a=area(10,0);//in try block call to the area method 
+            System.out.println("Area="+a); //when exception is occured then rest of the code will not executed
+        }
+        catch(Exception e)   //catch the exception print the value
+        {
+            System.out.println(e);
+        }
+    }
+    public static void main(String args[])
+    {
+        method1();    //it is calling the method1 in which exception id handle
+    }
+}
