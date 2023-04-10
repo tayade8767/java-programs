@@ -1,0 +1,36 @@
+
+
+class Outer
+{
+    int x=0;
+    
+         void OuterInnerDisplay()                    //it is the local inner class means in which inner class is delecred
+         {                                            //local inner class having accesibility is only inside method
+             int z=30;
+             System.out.println("We can enter inside the OuterInnerDisplay which is present in outer class in which Inner class is present");
+             class Inner                                    //inner class
+               {
+                  int y=10;
+                  void InnerDisplay()          //inner class method
+                  {
+                      System.out.println("IT is the local inner class");
+                      System.out.println("z="+z+" y="+y+" x="+x);
+                  }
+               }
+               Inner i=new Inner();
+               i.InnerDisplay();                               //calling to the inner class method
+         }
+}
+
+
+
+
+
+public class LocalInnerclass 
+    {
+       public static void main(String args[])
+       {
+           Outer O=new Outer(); 
+           O.OuterInnerDisplay();                                  //calling to the outer display
+       } 
+    }
