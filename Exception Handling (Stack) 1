@@ -1,0 +1,26 @@
+public class HelloWorld
+{
+     public static void method3()
+         {
+                 int i=10/0;
+             
+         }
+          public static void method2()
+         {
+             method3();
+         }
+         public static void method1()
+         {
+             try{
+             method2();
+                 //throw new Exception();
+             }
+             catch(Exception e)
+             {
+                 System.out.println("method1");
+             }
+         }
+     public static void main(String []args){
+       method1();
+     }
+}
