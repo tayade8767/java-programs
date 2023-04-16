@@ -1,0 +1,23 @@
+class Akash extends Thread                             //  Akash class method extends the Thread class
+{
+     public void run()                                 //   run method can extends any time  
+     {
+        while(true)
+        {
+            System.out.println("Akash is brand");
+        }
+     }
+}
+
+public class Multithreading
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                                                    //  creating the object of the of the  class of the extended Thread class
+        a.start();                                                 //  start the Thread
+        while (true)
+        {
+            System.out.println("Tayade is double brand");    
+        }
+    }
+}
