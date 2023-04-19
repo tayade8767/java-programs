@@ -1,0 +1,30 @@
+
+class Akash implements Runnable                           //Runnable is interface so it can be implemented by the 
+{
+    public void run()                            //Runnable interface implements run method 
+    {
+        int i=0;
+        while(true)
+        {
+            System.out.println("Akash "+i);
+            i++;
+        }
+    }
+}
+
+
+public class Multithreading_3
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();                        //  creating the object of implemented class
+        Thread t=new Thread(a);                     //  object of Akash class refering the Thread class
+        t.start();                       //  calling to the run method
+        int i=0;
+        while(true)
+        {
+            System.out.println("Tayade "+i);
+            i++;
+        }
+    }
+}
