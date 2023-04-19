@@ -1,0 +1,19 @@
+public class Multithreading_2 extends Thread                          //multithreading_2 class is extends the thread class 
+{
+    public void run()                                                     //   it is the run method which use to run the thread
+    {
+        while(true)
+        {
+            System.out.println("Akash");
+        }
+    }
+    public static void main(String args[])
+    {
+        Multithreading_2 m2=new Multithreading_2();
+        m2.start();                                                               //it is calling to the run method and start the thread
+        while(true)
+        {
+            System.out.println("Tayade");
+        }
+    }
+}
