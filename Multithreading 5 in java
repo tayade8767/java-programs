@@ -1,0 +1,27 @@
+public class Multithreading_methods extends Thread
+    {
+       public void run()
+        {
+              int count=0;
+              while(true)
+              {
+                 System.out.println(count);
+                 count++;
+                 try{
+                 Thread.sleep(count);                                  //InterruptedException can give so that try catch is use
+                 }
+                 catch(InterruptedException e)
+                 {
+                    System.out.println(e);
+                 }
+              }
+        }
+
+          public static void main(String args[]) throws Exception
+            {
+                  Multithreading_methods t=new Multithreading_methods();
+                  t.start();
+                  t.interrupt();
+            }                                                                               // it is interrupted exception
+}
+ 
