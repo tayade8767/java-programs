@@ -1,0 +1,20 @@
+public class Multithreading_methods extends Thread
+{
+    public Multithreading_methods(String name)                            
+    {
+        super(name);                                                //super is calling to the Thread class constructor
+        setPriority(Thread.MIN_PRIORITY+4);
+    }
+
+      public static void main(String args[]) throws Exception
+        {
+        Multithreading_methods t=new Multithreading_methods("AKASH TAYADE");                   //creating the object of the class            //claaing to the constructor
+        System.out.println("ID :"+t.getId());
+        System.out.println("NAME :"+t.getName());
+        System.out.println("PRIORITY :"+t.getPriority());                         //it is the all the methods of the Thread class
+        System.out.println("STATE :"+t.getState());
+        System.out.println("ALIVE :"+t.isAlive());
+        t.start();
+       // System.out.println("hjdsfgdngl");
+        }    
+}
