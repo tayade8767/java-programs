@@ -1,0 +1,24 @@
+public class Multithreading_4 extends Thread
+{
+    public void run()
+    {
+        int count=0;
+        while(true)
+        {
+            System.out.println("Akash "+count);
+            count++;
+        }
+    }
+    public static void main(String args[])
+    {
+        Multithreading_4 s=new Multithreading_4();
+        s.start();
+        int count=0;
+        while(true)
+        {
+            System.out.println("Tayade "+count);
+            Thread.yield();                              //yield say that i am ready to wait let other thread complete According to the their Priority of the thread
+            count++;
+        }
+    }
+}
