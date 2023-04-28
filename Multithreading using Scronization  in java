@@ -1,0 +1,48 @@
+class Myclass
+{
+    // synchronized 
+  public void Dispaly(String str)                 //without synchronization                  
+    {
+        for(int i=0;i<str.length();i++)
+        {
+            System.out.print(str.charAt(i));
+        }
+    }
+}
+class Mythread1 extends Thread
+{
+    Myclass o;
+    Mythread1(Myclass obj)                   //   collecting theobject (takes the reference of the  Myclass)
+    {
+        o=obj;
+    }
+    public void run()                                     //   it starting the thread 1
+    {
+        o.Dispaly("hello world");                 //  calling the Display mehto of the Myclass and the printing the String
+    }
+}
+class MYthread2 extends Thread
+{
+    Myclass o;
+    MYthread2(Myclass obj)                                   //   collecting theobject (takes the reference of the  Myclass)
+    {
+        o=obj;
+    }
+    public void run()                                        //   it starting the thread 1
+    {
+        o.Dispaly("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+    }
+}
+
+
+public class Multithreading_Scronization 
+{
+    public static void main(String args[])
+    {
+           Myclass m=new Myclass();                                       //creating the object of the Myclass and it is passing to the Mythread1 and Mythread2
+           Mythread1 t1=new Mythread1(m);
+           MYthread2 t2=new MYthread2(m);
+           t1.start();
+           t2.start();
+    }
+}
