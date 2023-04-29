@@ -1,0 +1,114 @@
+    // it is the example for the ATM machine
+// let the person finished the work and then other person can go inside for the work like the Withdraw check bank balance etc 
+// It is the Student challange 
+
+
+
+
+
+
+
+
+class ATM
+{
+  synchronized public void Withdraw(String str)
+    {
+
+
+        System.out.println(str+" withdrawing");
+        try
+        {
+            Thread.sleep(300);
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+        System.out.println(" Money");
+
+
+
+
+
+
+
+        // for(int i=0;i<str.length();i++)
+        // {
+        //     System.out.print(str.charAt(i));
+        // }
+        //System.out.println("withdraw the money-----------------------------------------------------");
+    }
+   synchronized public void Creadit(String str,int amt)
+    {
+
+
+        System.out.println(str+" creaditing");
+        try
+        {
+            Thread.sleep(300);
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+        System.out.println(amt);
+
+
+
+
+        // for(int i=0;i<str.length();i++)
+        // {
+        //     System.out.print(str.charAt(i));
+        // }
+       // System.out.println("creadit the money=========================================================");
+    }
+
+}
+class Person1 extends Thread
+{
+    ATM a;
+    int amount;
+    String name;
+    Person1(ATM obj,String name,int amount)
+    {
+        a=obj;
+        this.name=name;
+        this.amount=amount;
+    }
+    public void run()
+    {
+        a.Withdraw(name);
+        a.Creadit(name,amount);
+    }
+}
+
+// class Person2 extends Thread
+// {
+//     ATM a;
+//     int amount;
+//     String name;
+//     Person2(ATM obj,String name,int amount)
+//     {
+//         a=obj;
+//         this.name=name;
+//         this.amount=amount;
+//     }
+//     public void run()
+//     {
+//         a.Withdraw(name);
+//         a.Creadit(name,amount);
+//     }
+// }
+
+public class Multithrading_Example 
+{
+      public static void main(String args[])
+      {
+           ATM atm=new ATM();
+           Person1 p1=new Person1(atm,"Akash",2000);
+           Person1 p2=new Person1(atm,"Tejas",5000);
+           p1.start();
+           p2.start();
+      }   
+}
+
