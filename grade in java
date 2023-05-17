@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner14;
+public class TodisplayGrades 
+{
+    int m;
+    TodisplayGrades(int m)
+    {
+       // this.n=n;
+        this.m=m;
+    }
+     void calculate(int a[][],int i)
+     {
+         // for(int i=n;i<=n;i++)
+         // {
+             
+             for(int j=0;j<m;j++)
+             {
+                int sum=0;
+                sum=a[i][j];
+                 
+                if(sum>=91 && sum<=100)
+                {
+                    System.out.println("Subject "+j+" got "+" AA");
+                }
+                else if(sum>=81 && sum<=90)
+                {
+                    System.out.println("Subject "+j+" got "+" AB");
+                }
+                else if(sum>=71 && sum<=80)
+                {
+                    System.out.println("Subject "+j+" got "+" BB");
+                }
+                else if(sum>=61 && sum<=70)
+                {
+                    System.out.println("Subject "+j+" got "+" BC");
+                }
+
+                else if(sum>=51 && sum<=60)
+                {
+                    System.out.println("Subject "+j+" got "+" CD");
+                }
+                else if(sum>=41 && sum<=50)
+                {
+                    System.out.println("Subject "+j+" got "+" DD");
+                }
+                else
+                {
+                    System.out.println("Subject "+j+" get "+" FAIL");
+                }
+            }
+      //  }
+        // return sum;
+     }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Student::");
+        int n=sc.nextInt();
+        System.out.print("Enter the number of Subjects::");
+        int m=sc.nextInt();
+        TodisplayGrades d=new TodisplayGrades(m);
+        int[][] a=new int[n][m];
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                a[i][j]=(int)(Math.random()*(100-0+1)+0);                    //random number in java is between in range  //Math.random()*(max-min+1)+min;
+            }
+            System.out.println("The student "+i);
+            d.calculate(a,i);
+            //  Display(p);
+        }
+        // for(int i=0;i<n;i++)
+        // {
+        //     for(int j=0;j<m;j++)
+        //     {
+        //         int p=calculate(a);
+        //         Display(p);
+        //     }
+        // }
+    }
+}
