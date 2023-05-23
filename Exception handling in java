@@ -1,0 +1,36 @@
+class Akash extends Exception
+{
+      public String toString()
+      {
+         return "Divide by zero";
+      }
+}
+public class Exception_handlinh 
+{
+    static void grandfather() throws Akash
+    {
+        int t=10,n=0;
+              if(t<=0 || n<=0)
+              {
+                  throw new Akash();
+              }
+    }
+    static void father() throws Akash
+    {
+            grandfather();
+    }
+    static void son()
+    {
+         try{
+            father();
+        }
+        catch(Akash a)
+        {
+            System.out.println(a);
+        }
+    }
+    public static void main(String args[])
+    {
+        son();
+    }
+}
