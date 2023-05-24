@@ -1,0 +1,29 @@
+class Akash
+{
+     int x=1209;
+     class Vikee
+     {
+        int y=945049;
+        void display()
+        {
+            System.out.println(x);
+            System.out.println(y);
+        }
+     }
+     void Display()
+     {
+        Vikee v=new Vikee();
+        v.display();
+        System.out.println(v.y);
+        System.out.println(x);
+     }
+}
+
+public class NestedInnerclass 
+{
+    public static void main(String args[])
+    {
+         Akash a=new Akash();
+         a.Display();
+    }
+}
