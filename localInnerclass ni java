@@ -1,0 +1,32 @@
+class Akash
+{
+     int x=1209;
+     
+     void Display()
+     {
+        class Vikee
+        {
+            int y=945049;
+            void display()
+            {
+                System.out.println(x);
+                System.out.println(y);
+            }
+        }
+        
+        Vikee v=new Vikee();
+        v.display();
+        System.out.println(v.y);
+        System.out.println(x);
+
+    }
+}
+public class LocalLnnerclass 
+{
+    public static void main(String args[])
+    {
+           Akash a=new Akash();
+           a.Display();
+    }
+}
+
