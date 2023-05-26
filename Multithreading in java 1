@@ -1,0 +1,24 @@
+class Akash implements Runnable
+{
+    public void run()
+    {
+        while(true)
+        {
+            System.out.println("Akash");
+        }
+    }
+}
+
+public class Multithreading__2 
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();
+        Thread t=new Thread(a);
+        t.start();
+        while(true)
+        {
+            System.out.println("Tayade");
+        }
+    }
+}
