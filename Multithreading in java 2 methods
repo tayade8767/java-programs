@@ -1,0 +1,21 @@
+class Akash extends Thread
+{
+    public Akash(String a)
+    {
+         super(a);
+    }
+}
+
+
+public class Multithreading__3 
+{
+    public static void main(String args[])
+    {
+          Akash a=new Akash("Akash Santosh Tayade");
+          System.out.println("Get ID::"+a.getId());
+          System.out.println("GET Name::"+a.getName());
+          System.out.println("Get Priority::"+a.getPriority());
+          System.out.println("State::"+a.getState());
+          System.out.println("State::"+a.isAlive());
+    }
+}
