@@ -1,0 +1,22 @@
+class Akash extends Thread
+{
+   public void run()
+    {
+        while(true)
+        {
+            System.out.println("Akash");
+        }
+    }
+}
+public class Multithreading_1 
+{
+    public static void main(String args[])
+    {
+        Akash a=new Akash();
+        a.start();
+        while(true)
+        {
+            System.out.println("Tayade");
+        }
+    }
+}
