@@ -1,0 +1,83 @@
+
+class Akash 
+{
+     boolean flag=true;
+     int data;
+    synchronized void setvalue(int value)
+     {
+        while(flag!=true)
+        {
+            try{
+                wait();
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+        flag=false;
+         data=value;
+         notify();
+     }
+     synchronized int getvalue()
+     {
+        while(flag!=false)
+        {
+            try{
+                wait();
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+        }
+        flag=true;
+        notify();
+        return data;
+     }
+}
+
+class Akash1 extends Thread
+{
+    Akash aka;
+     public Akash1(Akash a)
+     {
+        aka=a;
+     }
+     public void run()
+     {
+        int i=0;
+        while(true)
+        {
+           aka.setvalue(i);
+           System.out.println("Akash1 Producer::"+i); 
+           i++;
+        }
+     }
+}
+class Akash2 extends Thread
+{
+    Akash aka;
+    public Akash2(Akash a)
+    {
+       aka=a;
+    }
+    public void run()
+     {
+        while(true)
+        {
+           System.out.println("Akash2 Consumer::"+aka.getvalue()); 
+        }
+     }
+}
+public class Innerthread
+{
+    public static void main(String args[])
+    {
+         Akash a=new Akash();
+         Akash1 a1=new Akash1(a);
+         Akash2 a2=new Akash2(a);
+         a1.start();
+         a2.start();
+    }    
+}
