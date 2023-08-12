@@ -1,0 +1,49 @@
+
+interface M{
+     void pk();
+}
+class I implements M{
+    public void pk()
+    {
+        System.out.println("akakakaka");
+    }
+}
+
+public class lambdaex
+{
+    public static void main(String[] args) {
+        // I i=new I();                                              //  normal printing of the class
+        // i.pk();
+
+
+        // M i=new M() {
+        //     @Override
+        //     public void pk()
+        //     {
+        //         System.out.println("printing in anonomas way");             //  it is printing in anonoous way
+        //     }
+        // };
+        // i.pk();
+
+        // M i=() ->   {
+        //     System.out.println("printing by lambda expresion");          //  printing by the lambda expresion
+        // };
+        // i.pk();
+
+       Runnable r=()  ->
+        {
+                for(int i=0;i<10;i++)
+                {
+                    System.out.println("printing i="+i);                       //  no method name direct call the mehtod
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+                }
+        };
+        r.run();
+        Thread t=new Thread(r);
+
+    }
+}
