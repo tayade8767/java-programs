@@ -1,0 +1,19 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+public class I_O_stream {
+    public static void main(String[] args) throws IOException{
+        // Scanner sc=new Scanner(System.in);
+        // int a=sc.nextInt();
+
+        System.out.println("Enter the nummber::");
+        InputStreamReader is=new InputStreamReader(System.in); //InputStreamReader class and is for taking the input from the user
+        BufferedReader bf=new BufferedReader(is);           //   buffer reader class the use to read the input from reader
+
+        int num=Integer.parseInt(bf.readLine());        //   it is converted int to the and then by the  buffer reader class 
+
+        System.out.println(num);           //  printing the value 
+        bf.close;                              //  it is the good practice to close the Input file 
+    }
+}
