@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class Generics<T> {
+
+    T container;
+    public Generics( T container){
+        this.container=container;
+    }
+    public T getvalue()
+    {
+        return this.container;
+    }
+    public static void main(String[] args) {
+        Generics <Integer> t1=new Generics<Integer>(1001);                        //    use of generics
+          t1.container=1212;
+        System.out.println(t1.getvalue());
+    }
+}
