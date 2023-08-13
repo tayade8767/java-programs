@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class Generics<T> {
+
+    T container;
+    public Generics( T container){
+        this.container=container;
+    }
+    public T getvalue()
+    {
+        return this.container;
+    }
+    public static void main(String[] args) {
+        Generics <Integer> t1=new Generics<Integer>(1001);                        //    use of generics
+        Generics <String> t2=new Generics<String>(null);                     //   use of another data type
+          t1.container=1212;
+        System.out.println(t1.getvalue());
+        t2.container="AKASH IS THE BEST COMPETITEVE CODER IN THE WORLD";
+        System.out.println(t2.getvalue());
+    }
+}
